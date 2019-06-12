@@ -177,10 +177,10 @@ public class CommonUtil {
 			string = df.format(data);
 			data = Double.parseDouble(string);
 			
-			if(data % 1 == 0 ) {
-				int intValue = (int) data.doubleValue();
-				Integer integer = new Integer(intValue);
-				return integer;
+			if(data % 1 == 0) {
+				long longValue = (long) data.doubleValue();
+				Long longV = new Long(longValue);
+				return longV;
 			}
 
 		} catch (NumberFormatException e) {
